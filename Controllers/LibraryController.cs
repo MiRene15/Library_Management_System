@@ -130,17 +130,117 @@ namespace Library_Management_System.Controllers
                 IsAvailable = true
             };
 
+            var user1 = new User
+            {
+                Id = 1,
+                FullName = "Juan Dela Cruz",
+                Email = "juan.delacruz@email.com",
+                Password = "Password123!",
+                Role = "Member",
+                DateRegistered = new DateTime(2024, 10, 1),
+                IsActive = true
+            };
 
-            var user1 = new User { Id = 1, FullName = "Juan Dela Cruz" };
-            var user2 = new User { Id = 2, FullName = "Maria Clara" };
-            var user3 = new User { Id = 3, FullName = "Jose Rizal" };
-            var user4 = new User { Id = 4, FullName = "Andres Bonifacio" };
-            var user5 = new User { Id = 5, FullName = "Emilio Aguinaldo" };
-            var user6 = new User { Id = 6, FullName = "Andres Bonifacio" };
-            var user7 = new User { Id = 7, FullName = "Emilio Jacinto" };
-            var user8 = new User { Id = 8, FullName = "Apolinario Mabini" };
-            var user9 = new User { Id = 9, FullName = "Gregoria de Jesus" };
-            var user10 = new User { Id = 10, FullName = "Jose Palma" };
+            var user2 = new User
+            {
+                Id = 2,
+                FullName = "Maria Clara",
+                Email = "maria.clara@email.com",
+                Password = "SecurePass456!",
+                Role = "Member",
+                DateRegistered = new DateTime(2024, 11, 5),
+                IsActive = true
+            };
+
+            var user3 = new User
+            {
+                Id = 3,
+                FullName = "Pedro Penduko",
+                Email = "pedro.penduko@email.com",
+                Password = "Mythical789!",
+                Role = "Admin",
+                DateRegistered = new DateTime(2024, 12, 15),
+                IsActive = false
+            };
+
+            var user4 = new User
+            {
+                Id = 4,
+                FullName = "Carlos Santillan",
+                Email = "carlos.santillan@email.com",
+                Password = "Carlos2024!",
+                Role = "Member",
+                DateRegistered = new DateTime(2025, 1, 10),
+                IsActive = true
+            };
+
+            var user5 = new User
+            {
+                Id = 5,
+                FullName = "Ligaya Mendoza",
+                Email = "ligaya.mendoza@email.com",
+                Password = "LigayaM@123",
+                Role = "Member",
+                DateRegistered = new DateTime(2025, 2, 20),
+                IsActive = true
+            };
+
+            var user6 = new User
+            {
+                Id = 6,
+                FullName = "Andres Bonifacio",
+                Email = "andres.bonifacio@email.com",
+                Password = "Katipunan2025!",
+                Role = "Member",
+                DateRegistered = new DateTime(2025, 3, 5),
+                IsActive = true
+            };
+
+            var user7 = new User
+            {
+                Id = 7,
+                FullName = "Gregoria de Jesus",
+                Email = "gregoria.dejesus@email.com",
+                Password = "Lakambini#2025",
+                Role = "Member",
+                DateRegistered = new DateTime(2025, 3, 15),
+                IsActive = true
+            };
+
+            var user8 = new User
+            {
+                Id = 8,
+                FullName = "Emilio Aguinaldo",
+                Email = "emilio.aguinaldo@email.com",
+                Password = "Aguinaldo!1898",
+                Role = "Admin",
+                DateRegistered = new DateTime(2025, 4, 1),
+                IsActive = false
+            };
+
+            var user9 = new User
+            {
+                Id = 9,
+                FullName = "Melchora Aquino",
+                Email = "melchora.aquino@email.com",
+                Password = "TandangSora2025",
+                Role = "Member",
+                DateRegistered = new DateTime(2025, 4, 20),
+                IsActive = true
+            };
+
+            var user10 = new User
+            {
+                Id = 10,
+                FullName = "Apolinario Mabini",
+                Email = "apolinario.mabini@email.com",
+                Password = "Sublime2025!",
+                Role = "Admin",
+                DateRegistered = new DateTime(2025, 5, 1),
+                IsActive = true
+            };
+
+
 
             user1.BorrowedBooks.Add(book1);
             user2.BorrowedBooks.Add(book2);
