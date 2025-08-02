@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Library_Management_System.Models.Book>
+@{
+    ViewData["Title"] = "Library Index";
+}
+
+
+<h2>Library Books</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>ISBN</th>
+            <th>Publication Year</th>
+            <th>Available</th>
+            <th>Date Returned</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Books in Model)
+        {
+            <tr>
+                <td>@Books.Title</td>
+                <td>@Books.Author?.Name</td>
+                <td>@Books.Genre</td>
+                <td>@Books.ISBN</td>
+                <td>@Books.PublicationYear</td>
+                <td>@(Books.IsAvailable ? "Yes" : "No")</td>
+                <td>@(Books.DateReturned?.ToShortDateString() ?? "-")</td>
+            </tr>
+        }
+    </tbody>
+</table>
